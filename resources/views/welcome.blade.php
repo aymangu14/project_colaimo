@@ -30,7 +30,7 @@
             </div>
         @endif
         <div class="container-md">
-            <img src="logobg.png" alt="">
+            <img src="colaimo.png" alt="">
         </div>
 </body>
 </html>
