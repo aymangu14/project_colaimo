@@ -22,7 +22,7 @@
 							<h1 class="fs-4 card-title fw-bold mb-4">{{ __('Ajouter un utilisateur') }}</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                 @csrf
-								<div class="mb-3">
+								<div class="mb-3"
                                     <label for="name" class="col-md-4 col-form-label mb-2 text-muted">{{ __('Nom') }}</label>
 									<input id="name" type="text" class="form-control  @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                                     @error('name')
@@ -43,7 +43,7 @@
 								</div>
 								<div class="mb-3">
                                     <label for="password" class="col-md-4 col-form-label mb-2 text-muted">{{ __('Mot de passe') }}</label>
-									<input id="password" type="text" class="form-control  @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus>
+									<input id="password" type="password" class="form-control  @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus>
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -52,7 +52,7 @@
 								</div>
                                 <div class="mb-3">
                                     <label for="password-confirm" class="col-md-4 col-form-label mb-2 text-muted">{{ __('Confirmer mot de passe') }}</label>
-									<input id="password-confirm" type="text" class="form-control  @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password" autofocus>
+									<input id="password-confirm" type="password" class="form-control  @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password" autofocus>
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
